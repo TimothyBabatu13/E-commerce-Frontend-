@@ -233,7 +233,7 @@ section .text{
         justify-content: center;
     }
     .close{
-        content: url("Images/icon-close.svg");
+        content: url("icon-close.svg");
     }
     .normal-image{
       height: 25em;
