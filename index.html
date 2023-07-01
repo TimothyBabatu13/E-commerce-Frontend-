@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icon-menu.svg" id="menu-btn" style="display: none"alt="">
+            <img src="logo.svg" alt="logo">
+            <div class="middle">
+                <a href="#">Collections</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="right">
+                <img class="cart-icon" src="icon-cart.svg" alt="cart-icon">
+                <span id="number-of-cart" class="hide"></span>
+                <img src="image-avatar.png" alt="avatar">
+
+                <div class="cart-info hide">
+                    <p>Cart</p>
+                    <div class="message">
+                        Your cart is empty
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="images">
+                <img class="normal-image img-fluid" src="image-product-1.jpg" alt="img-1">
+                <div class="thumbmail-images">
+                    <img class="thumbmail-images-image" src="image-product-1-thumbnail.jpg" alt="">
+                    <img class="thumbmail-images-image" src="image-product-2-thumbnail.jpg" alt="">
+                    <img class="thumbmail-images-image" src="image-product-3-thumbnail.jpg" alt="">
+                    <img class="thumbmail-images-image" src="image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <h4>SNEAKER COMPANY</h4>
+                <h2>Fall Limited Edition <br> Sneakers</h2>
+                <p id="br">These low-profile sneakers are your perfect casual wear <br>companion. Featuring a durable rubber outer sole, they'll <br> withstand everything the weather can offer.</p>
+                <div id="mobile">
+                    <div class="price">
+                        <div class="actual-price">$<span>125.00</span></div>
+                        <div class="discount">50%</div>
+                    </div>
+                    <p class="discount-price"><s>$250.00</s></p>
+                </div>
+                
+                <div class="cart-functionality">
+                    <div class="input-info">
+                        <div class="decreaseCartedItems addSum">-</div>
+                        <div class="numberOfCartedItems">0</div>
+                        <div class="increaseCartedItems addSum">+</div>
+                    </div>
+                    <div class="button mobile-btn">
+                        <img src="icon-cart.svg" alt="">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

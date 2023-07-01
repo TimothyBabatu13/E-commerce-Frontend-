@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.img-fluid{
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header, header .right, .div .right{
+    display: flex;
+    align-items: center;
+}
+header{
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+header a, header .right img{
+    cursor: pointer;
+}
+header a{
+    padding: 25px 10px;
+    color: rgba(0, 0, 0, 0.404);
+}
+header a:hover{
+    color: black;
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+}
+header .right{
+    position: relative;
+}
+#number-of-cart{
+    position: absolute;
+    background: hsl(26, 100%, 55%);
+    padding: 2px;
+    border-radius: 5px;
+    top: -15px;
+    left: 25px;
+}
+header .right img{
+    width: 35px;
+    margin-right: 20px;
+}
+header .right img:last-child{
+    margin-right: 0;
+}
+header .right img:last-child:hover{
+    border: 1px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+.goods-img{
+    margin-right: 10px !important;
+}
+.cart-info{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    border: 1px solid black;
+    width: 250px;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+
+/* This needs styling */
+.cart-info p{
+    border-bottom: 10px soild red;   
+    padding: 5px 10px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+}
+/* The styling ends here */
+section, .thumbmail-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    align-items: center;
+    padding: 50px 20px;
+}
+.images{
+    width: 50%;
+}
+.images img{
+    border-radius: 15px;
+}
+.normal-image{
+    height: 35em;
+    margin-bottom: 10px;
+}
+
+.thumbmail-images img{
+    cursor: pointer;
+    width: 20%;
+}
+section .text{
+    width: 40%;
+}
+
+.cart-functionality, .input-info, .button{
+    display: flex;
+    align-items: center;
+}
+
+.input-info{
+    background: hsl(223, 64%, 98%);
+    padding: 10px 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.input-info div{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.input-info div:last-child{
+    margin-right: 0;
+}
+.button{
+    background:orange;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div img{
+    width: 20px !important;
+}
+.over-flow{
+  max-height: 10em;
+  overflow-y: scroll;
+}
+@media(max-width: 768px){
+    header{
+        border-bottom: none;
+    }
+    #menu-btn{
+        display: block !important;
+        position: relative;
+        z-index: 100;
+    }
+    .middle{
+        position: absolute;
+        top: 0;
+        left: -1000px;
+        z-index: 10;
+        width: 60%;
+        background: white;
+        padding: 80px 20px;
+        height: 100vh;
+        transition-property: all;
+        transition-delay: .05s;
+        transition-timing-function: ease; 
+    }
+    .back{
+        left: 0;
+    }
+    .middle a{
+        display: block;
+        font-weight: bolder;
+        color: black;
+        font-size: 1.8rem;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    section{
+        padding: 0;
+    }
+    section, .cart-functionality{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .images .thumbmail-images{
+        display: none;
+    }
+    .images, section .text{
+        width: 100%;
+    }
+    .text h4{
+        font-size: 1.6em;
+        margin: 20px 0;
+    }
+    .text h2 br, #br br{
+        display: none;
+    }
+    .text h2{
+        font-size: 2em;
+        line-height: 1;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #br{
+        margin: 20px 0 30px 0;
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    #mobile, .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .actual-price{
+        font-size: 1.2em;
+    }
+    .discount{
+        margin-left: 60%;
+        font-size: 1.2em;
+    }
+    .discount-price{
+        font-size: 1.2em;
+    }
+    .cart-functionality div{
+        width: 100%;
+        text-align: center;
+    }
+    .button{
+        justify-content: center;
+    }
+    .close{
+        content: url("Images/icon-close.svg");
+    }
+    .normal-image{
+      height: 25em;
+    }
+    .input-info{
+      margin-bottom: 10px;
+    }
+    .mobile-btn{
+      margin-bottom: 20px;
+    }
+    .header-txt h2{
+      font-size: 1.5em;
+    }
+}
